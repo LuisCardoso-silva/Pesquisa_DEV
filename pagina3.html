@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        #titulo_pagina{
+            text-align: center;
+        }
+        .titulo{
+            font-weight: bold;
+            font-size: 96px;
+            color: blue;
+        }
+        body{
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo_pagina" class="titulo">Questão 3</h1>
+    <h2>Calcular quanto foi arrecadado em vendas dos pães e broas e informar qual o valor a ser colocado na poupança.</h2>
+    <input type="text" name="paes" id="paes" placeholder="Quantos pães?">
+    <input type="text" name="broas" id="broas" placeholder="Quantas Broas?">
+    <button onclick="calcularValores()">Calcular</button>
+    <br>
+    <br>
+    <input type="text" name="resultado" id="resultado">
+    <br>
+    <br>
+    <a href="index.html">Página inicial</a>
+    <br>
+    <a href="pagina3.html">Voltar</a>
+    <a href="pagina4.html">Próxima Questão</a>
+</body>
+<script>
+    function calcularValores(){
+        var paes = document.getElementById('paes').value*0.12;
+        var broas = document.getElementById('broas').value*1.50;
+        var valor = paes+broas
+        document.getElementById('resultado').value = 'Total R$ ' +valor+ ', guardar R$' +(valor/100)*10
+    }
+</script>
+</html>

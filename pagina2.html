@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+    <style>
+        #titulo_pagina{
+            text-align: center;
+        }
+        .titulo{
+            font-weight: bold;
+            font-size: 96px;
+            color: blue;
+        }
+        body{
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo_pagina" class="titulo">Questão 2</h1>
+    <h2>Calcular a quantidade necessária de ferraduras para por nos cavalos ditos pelo usuário.</h2>
+    <input type="text"name="cavalos" id="cavalos" placeholder="digite a quantidade de cavalos">
+    <button onclick="calcularFerraduras()">calcular</button><br>
+    <h3>A quantidade de Ferraduras necessárias é:</h3>
+    <input type="text" name="resultado" id="resultado">
+    <br>
+    <br>
+    <a href="index.html">Página inicial</a>
+    <br>
+    <a href="pagina1.html">Voltar</a>
+    <a href="pagina3.html">Próxima Questão</a>
+
+</body>
+<script>
+    function calcularFerraduras(){
+        var cavalos = document.getElementById('cavalos').value;
+        var ferraduras = cavalos*4;
+        document.getElementById('resultado').value = ferraduras+ ' ferraduras.';
+        }
+</script>
+</html>

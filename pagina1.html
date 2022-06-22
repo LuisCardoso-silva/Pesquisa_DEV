@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <style>
+        #titulo_pagina{
+            text-align: center;
+        }
+        .titulo{
+            font-weight: bold;
+            font-size: 96px;
+            color: blue;
+        }
+        body{
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo_pagina" class="titulo">Questão 1</h1>
+    <h2>Calcular a área, tendo a largura e comprimento.</h2>
+    <input type="text"name="largura" id="largura" placeholder="digite a largura">
+    <input type="text"name="comprimento" id="comprimento" placeholder="digite o comprimento">
+    <button onclick="calcularArea()">calcular</button><br>
+    <input type="text" name="resultado" id="resultado">
+    <hr>
+    <a href="index.html">Página inicial</a>
+    <a href="pagina2.html">Próxima Questão</a>
+
+    
+</body>
+<script>
+    function calcularArea(){
+        var largura = document.getElementById('largura').value;
+        var comprimento = document.getElementById('comprimento').value;
+        var area = largura*comprimento;
+        document.getElementById('resultado').value='A área é de '+area+ 'm²s';
+        console.log(area);
+    }
+</script>
+</html>

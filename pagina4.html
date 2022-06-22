@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <style>
+        #titulo_pagina{
+            text-align: center;
+        }
+        .titulo{
+            font-weight: bold;
+            font-size: 96px;
+            color: blue;
+        }
+        body{
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        #resultado{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo_pagina" class="titulo">Questão 4</h1>
+    <h2>Calcular quantos dias o usuário já viveu.</h2>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+    <input type="text" name="idade" id="idade" placeholder="Qual sua idade?">
+    <button ondblclick="calcularDias()">calcular</button>
+    <br>
+    <br>
+    <input type="text" name="resultado" id="resultado">
+    <br>
+    <br>
+    <a href="index.html">Página inicial</a>
+    <a href="pagina3.html">Voltar</a>
+</body>
+<script>
+    function calcularDias(){
+        var nome = document.getElementById('nome').value;
+        var anos = document.getElementById('idade').value;
+        var dias = anos*365;
+        document.getElementById('resultado').value= nome+', Você sobreviveu por ' +anos+ ' anos, e ' +dias+ ' dias.'
+        console.log(anos);
+    }
+</script>
+</html>
