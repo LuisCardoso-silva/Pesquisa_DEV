@@ -1,0 +1,33 @@
+body{
+    background-color: #eee;
+}
+
+#linha_inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0f0;
+    height: 83vh;
+}
+
+#img{
+    border: 1px solid #00f;
+    height: 70%;
+    width: 23rem;
+    margin: 0 1.1rem;
+}
+
+#img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#login{
+    border: 1px solid #f00;
+    height: 70%;
+    width: 23rem;
+    margin: 0 1.1rem;
+}
